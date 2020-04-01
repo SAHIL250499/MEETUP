@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorWhite</color>
+    <color name="colorPrimaryDark">@color/colorDark</color>
+    <color name="colorAccent">@color/colorDanger</color>
+    <color name="colorAccent2">#F6B93B</color>
+
+    <color name="colorInfo">#0984E3</color>
+    <color name="colorDanger">#FF4757</color>
+    <color name="colorSuccess">#2ECC71</color>
+    <color name="colorLightGreen">#c1f1d5</color>
+    <color name="colorWarning">@color/colorAccent2</color>
+
+    <color name="colorStories">#f1ebfa</color>
+    <color name="colorStoriesBG">#222e37</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLight">#F0F0F0</color>
+    <color name="colorDark">#212121</color>
+    <color name="colorGrey">#E4E2E2</color>
+
+    <color name="colorPurple">#341f97</color>
+
+    <color name="colorGoogle">#FF3E30</color>
+    <color name="colorFacebook">#1877f2</color>
+</resources>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TestNewsFeed.TestActivity">
+
+    <include
+        android:id="@+id/profile_appBar"
+        layout="@layout/app_bar_layout" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_user_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/profile_appBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/default_img" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_user_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="36dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_userStatus">
+
+            <TextView
+                android:id="@+id/no_of_posts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/source_sans_bold"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="@color/colorBlack"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/monts_reg"
+                android:gravity="center"
+                android:text="posts"
+                android:textColor="@color/colorDark"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/friends_prof_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_userStatus">
+
+            <TextView
+                android:id="@+id/no_of_friends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/source_sans_bold"
+                android:gravity="center"
+                android:text="100"
+                android:textColor="@color/colorBlack"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/monts_reg"
+                android:gravity="center"
+                android:text="friends"
+                android:textColor="@color/colorDark"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_userStatus">
+
+            <TextView
+                android:id="@+id/last_seen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/source_sans_bold"
+                android:gravity="center"
+                android:text="2m"
+                android:textColor="@color/colorBlack"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/last_seen_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/monts_reg"
+                android:gravity="center"
+                android:text="last seen"
+                android:textColor="@color/colorDark"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/profile_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_appBar"
+        android:layout_alignStart="@id/profile_user_image"
+        android:layout_marginStart="124dp"
+        android:fontFamily="@font/source_sans_semibold"
+        android:text="Dipesh Patil"
+        android:textColor="@color/colorBlack"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/profile_userStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_userName"
+        android:layout_alignStart="@id/profile_user_image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="16dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/default_status" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout4"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="24dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/profile_friendReq"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/source_sans_bold"
+            android:text="Add Friend"
+            android:textColor="@color/colorInfo"
+            android:textSize="15sp"
+            app:rippleColor="@color/colorInfo"
+            app:strokeColor="@color/colorInfo" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/profile_sendMessage"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/source_sans_bold"
+            android:text="Message"
+            android:textColor="@color/colorSuccess"
+            android:textSize="15sp"
+            app:rippleColor="@color/colorSuccess"
+            app:strokeColor="@color/colorSuccess" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayout5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/post_thumb_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="3" />
+
+    </ScrollView>
+
+</RelativeLayout>

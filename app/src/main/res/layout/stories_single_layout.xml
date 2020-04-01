@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:background="@color/colorLight"
+    android:layout_height="wrap_content">
+
+    <xute.storyview.StoryView
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:id="@+id/stories_single_storyview"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:spaceBetweenImageAndIndicator="1dp"
+        app:storyImageRadius="8dp"
+        app:storyItemIndicatorWidth="1dp" />
+
+    <TextView
+        android:id="@+id/story_single_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/stories_single_storyview"
+        android:fontFamily="@font/source_sans_semibold"
+        android:text="Dipesh Patil"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp" />
+
+</RelativeLayout>

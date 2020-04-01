@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.meetup">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MeetUp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".LocationPackage.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".NewsFeed.CommentActivity" /> <!-- <service -->
+        <activity
+            android:name=".PostsPackage.LikesListActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".FriendsPackage.FriendsListActivity" />
+        <activity android:name=".ChatsPackage.ChatListActivity" />
+        <activity android:name=".NewsFeed.TestPostsActivity" />
+        <activity android:name=".LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChatsPackage.ChatActivity"
+            android:parentActivityName=".ChatsPackage.ChatListActivity" />
+        <activity android:name=".PostsPackage.PostDetailActivity" />
+        <activity
+            android:name=".ProfilePackage.ProfileActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UsersPackage.UsersActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DetailsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity
+            android:name=".PostActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

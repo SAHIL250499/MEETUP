@@ -1,0 +1,26 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=5C:03:5D:B0:31:12:6A:AA:71:0F:40:D7:5E:CD:DB:D4:5B:67:51:4E%3Bcom.example.meetup.LocationPackage
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    5C:03:5D:B0:31:12:6A:AA:71:0F:40:D7:5E:CD:DB:D4:5B:67:51:4E
+
+    SHA-1 certificate fingerprint:
+    5C:03:5D:B0:31:12:6A:AA:71:0F:40:D7:5E:CD:DB:D4:5B:67:51:4E
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyB5tqI18NNna2XbsBVl57DkUHTSWCCyfOo
+    </string>
+</resources>

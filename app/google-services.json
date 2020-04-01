@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "179916148550",
+    "firebase_url": "https://lapitchat-d89ee.firebaseio.com",
+    "project_id": "lapitchat-d89ee",
+    "storage_bucket": "lapitchat-d89ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179916148550:android:066451477fa2922d631f47",
+        "android_client_info": {
+          "package_name": "com.example.meetup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179916148550-9mqb9f5hl8udok64tlg9lmllqaniucfk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.meetup",
+            "certificate_hash": "5c035db031126aaa710f40d75ecddbd45b67514e"
+          }
+        },
+        {
+          "client_id": "179916148550-t4c2g3e0boevc5cdats49cq5h0hbjckr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiTB0r3Xnjr9yBV-w_MhSTCeVVYMGwmpI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179916148550-t4c2g3e0boevc5cdats49cq5h0hbjckr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
